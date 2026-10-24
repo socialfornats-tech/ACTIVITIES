@@ -20,12 +20,10 @@ public class Week2 {
             int firstNum = input.nextInt();
             System.out.print("Enter second integer: ");
             int secNum = input.nextInt();
- 
             System.out.println("\n=== Results for " + firstNum + " and " + secNum + " ===");
             System.out.println("Addition:       " + firstNum + " + " + secNum + " = " + (firstNum + secNum));
             System.out.println("Subtraction:    " + firstNum + " - " + secNum + " = " + (firstNum - secNum));
             System.out.println("Multiplication: " + firstNum + " * " + secNum + " = " + (firstNum * secNum));
- 
             // Division and modulus fail with an int divided by zero, so check b first
             if (secNum != 0) {
                 // Negative operands: / and % are the ones that behave differently.
@@ -51,11 +49,9 @@ public class Week2 {
         // Pass if (grade <= 3.0 AND absences <= 3) OR grade <= 1.75
         boolean meetsHighGradeRule = grade <= 1.75;
         boolean passes = (grade <= 3.0 && absences <= 3) || (grade <= 1.75);
- 
         System.out.println("=== Eligibility Check ===");
         System.out.println("Grade:    " + grade);
         System.out.println("Absences: " + absences);
- 
          if (passes) {
                 System.out.println("Result: PASS");
                 if (meetsHighGradeRule) {
@@ -80,30 +76,23 @@ public class Week2 {
         double balance = 1000.0;
         System.out.println("=== Balance Growth ===");
         System.out.println("Start:             " + balance);
- 
         balance += 500;      // deposit of 500
         System.out.println("After += 500:      " + balance);
- 
         balance *= 1.05;     // 5% interest
         System.out.println("After *= 1.05:     " + balance);
- 
         balance += 250;      // another deposit of 250
         System.out.println("After += 250:      " + balance);
- 
         balance *= 1.10;     // 10% bonus
         System.out.println("After *= 1.10:     " + balance);
- 
         // --- Postfix vs prefix increment ---
         int count = 5;
         System.out.println("\n=== Postfix: count++ ===");
         System.out.println("count++ prints:    " + count++);
         System.out.println("count afterwards:  " + count);
- 
         count = 5; // reset so both tests start from the same value
         System.out.println("\n=== Prefix: ++count ===");
         System.out.println("++count prints:    " + ++count);
         System.out.println("count afterwards:  " + count);
- 
         /*
          * The output is different because count++ and ++count work differently
          * With count++, the old value (5) is printed first, then count becomes 6.
@@ -120,18 +109,14 @@ public class Week2 {
         int b = 3;
         int c = 2;
         int x = 4;
-
         System.out.println("=== Precedence Puzzle Solver ===");
-
         // Puzzle 1: The answer is true because a + b * c = 11, which is greater than 10.
         // Also, a % b = 2, so both conditions are true.
         System.out.println("Puzzle 1: " + (a + b * c > 10 && a % b == 2));
-
         // Puzzle 2: The answer is 16. x++ uses the old value (4), then x becomes 5.
         // After that, ++x makes x become 6. Since multiplication comes first,
         // 6 * 2 = 12, then 4 + 12 = 16.
         System.out.println("Puzzle 2: " + (x++ + ++x * 2));
-
         // Puzzle 3: The answer is 7.0. First, 7 / 2 = 3 because both are integers.
         // Then, 3 * 2.0 = 6.0, and 1 % 2 = 1.
         // Finally, 6.0 + 1 = 7.0.
