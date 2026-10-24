@@ -14,9 +14,10 @@ import java.util.Scanner;
 
 public class Week4 {
     private static final String DIVIDER = "----------------------------------------";
+    
     public static void main(String[] args) {
         try (Scanner input = new Scanner(System.in)) {
-
+            
         // (BASIC) NUMBER AND SQUARE PRINTER
         System.out.println("(BASIC) NUMBER AND SQUARE PRINTER");
         int limit = 10;
@@ -28,11 +29,9 @@ public class Week4 {
         // (INTERMEDIATE) SUM UNTIL SENTINEL VALUE
         System.out.println();
         System.out.println("(INTERMEDIATE) SUM UNTIL SENTINEL VALUE");
-
             int total = 0;
             System.out.print("Enter a number (-1 to stop): ");
             int number = input.nextInt();
-
             // -1 is checked before adding, so it never reaches the total
             while (number != -1) {
                 total += number;
@@ -60,6 +59,7 @@ public class Week4 {
             }
             System.out.println();   // newline after each row
         }
+        System.out.println("--------------------------");
 
         // (HARD) WAREHOUSE INVENTORY SCANNER
         System.out.println();
