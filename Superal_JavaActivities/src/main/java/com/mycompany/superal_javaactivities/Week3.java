@@ -114,8 +114,8 @@ public class Week3 {
         System.out.println("--------------------------");
 
         System.out.println();
-        // (HARD) ATM WITHDRAWAL VALIDATOR
-        System.out.println("(HARD) ATM WITHDRAWAL VALIDATOR");
+        // (HARD) ATM TRANSACTION AUTHORIZER
+        System.out.println("(HARD) ATM TRANSACTION AUTHORIZER");
 
             boolean authenticated = false;
             boolean approved = false;
