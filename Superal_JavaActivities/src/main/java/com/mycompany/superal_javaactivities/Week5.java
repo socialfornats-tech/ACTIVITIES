@@ -7,7 +7,6 @@ package com.mycompany.superal_javaactivities;
 
 
 import java.util.Arrays;
-
 /**
  *
  * @author natal
