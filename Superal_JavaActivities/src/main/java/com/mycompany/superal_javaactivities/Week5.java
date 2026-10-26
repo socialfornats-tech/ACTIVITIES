@@ -94,9 +94,9 @@ public class Week5 {
         scores from lowest to highest without changing the original array. */
         System.out.println("--------------------------");
 
-        // (HARD) CLASS RANKING SYSTEM
+        // (EXPERT) CLASS RANKING SYSTEM
         System.out.println();
-        System.out.println("(HARD) STUDENT CLASS LEADERBOARD");
+        System.out.println("(EXPERT) STUDENT CLASS LEADERBOARD");
         runStudentLeaderboard();
     }
     /*THIS PART CONTAINS IT'S OWN CLASS TO RUN AND SEVERAL HELPER METHODS SO I MOVED IT INSTEAD
