@@ -24,7 +24,6 @@ public class Week2 {
             System.out.println("Addition:       " + firstNum + " + " + secNum + " = " + (firstNum + secNum));
             System.out.println("Subtraction:    " + firstNum + " - " + secNum + " = " + (firstNum - secNum));
             System.out.println("Multiplication: " + firstNum + " * " + secNum + " = " + (firstNum * secNum));
-            // Division and modulus fail with an int divided by zero, so check b first
             if (secNum != 0) {
                 // Negative operands: / and % are the ones that behave differently.
                 // Integer division cuts off the decimal toward zero (-7 / 2 = -3, not -4),
@@ -103,8 +102,8 @@ public class Week2 {
         System.out.println("--------------------------");
         
         System.out.println();
-        // (HARD) PRECEDENCE PUZZLE SOLVER
-        System.out.println("(HARD) PRECEDENCE PUZZLE SOLVER");
+        // (EXPERT) PRECEDENCE PUZZLE SOLVER
+        System.out.println("(EXPERT) PRECEDENCE PUZZLE SOLVER");
         int a = 5;
         int b = 3;
         int c = 2;
