@@ -83,7 +83,7 @@ public class Week1 {
 
         // (EXPERT) OVERFLOW AND REFERENCE INVESTIGATOR
         System.out.println();
-        System.out.println("(HARD) OVERFLOW AND REFERENCE INVESTIGATOR");
+        System.out.println("(EXPERT) OVERFLOW AND REFERENCE INVESTIGATOR");
         // ---------- Part 1: byte overflow ----------
         // A byte can only hold numbers from -128 to 127.
         byte number = 127;
