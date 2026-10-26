@@ -61,9 +61,9 @@ public class Week4 {
         }
         System.out.println("--------------------------");
 
-        // (HARD) WAREHOUSE INVENTORY SCANNER
+        // (EXPERT) WAREHOUSE INVENTORY SCANNER
         System.out.println();
-        System.out.println("(HARD) WAREHOUSE INVENTORY SCANNER");
+        System.out.println("(EXPERT) WAREHOUSE INVENTORY SCANNER");
         // ---------- Entry point: DO-WHILE menu ----------
         Warehouse warehouse = new Warehouse(new int[][] {
             {21, -1, 14, 25},
